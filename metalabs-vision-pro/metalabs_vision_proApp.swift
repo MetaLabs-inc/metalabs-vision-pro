@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import RealityKitContent
 
 @main
 struct metalabs_vision_proApp: App {
     // The view model.
     @State private var model = ViewModel()
-    
+    @State private var aboutUsImmersionStyle: ImmersionStyle = .mixed
+
     var body: some Scene {
         WindowGroup ("Content Screen", id: "content") {
             ContentView().environment(model)
@@ -21,7 +23,7 @@ struct metalabs_vision_proApp: App {
         WindowGroup(id: Module.aboutUs.name) {
             ModuleDetail(module: Module.aboutUs).environment(model)
         }
-        .windowStyle(.plain)
+        .windowStyle(.volumetric)
         .defaultSize(width: 0.6, height: 0.6, depth: 0.6, in: .meters)
         
         // A volume that displays a the work detail.

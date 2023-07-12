@@ -7,6 +7,7 @@
 
 import SwiftUI
 import RealityKit
+import RealityKitContent
 
 /// A detail view that presents information about different module types.
 struct ModuleDetail: View {
@@ -57,6 +58,8 @@ struct ModuleDetail: View {
 
                     module.detailView
                         .frame(width: imageWidth, alignment: .center)
+            
+
                 }
                 .offset(y: -30)
             }
@@ -71,12 +74,7 @@ extension Module {
     fileprivate var detailView: some View {
         switch self {
         case .aboutUs:
-            RealityView { content in
-                let model = ModelEntity(
-                             mesh: .generateSphere(radius: 0.1),
-                             materials: [SimpleMaterial(color: .white, isMetallic: true)])
-                content.add(model)
-            }
+            CathedralModule()
         case .work:
             RealityView { content in
                         let model = ModelEntity(
