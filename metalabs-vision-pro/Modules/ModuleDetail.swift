@@ -74,7 +74,7 @@ extension Module {
     fileprivate var detailView: some View {
         switch self {
         case .aboutUs:
-            CathedralModule()
+            ModelsModule()
         case .work:
             RealityView { content in
                         let model = ModelEntity(

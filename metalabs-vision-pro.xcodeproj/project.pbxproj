@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A41CDA42A5E55B9006E88F6 /* CathedralModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A41CDA32A5E55B9006E88F6 /* CathedralModule.swift */; };
+		8A41CDA42A5E55B9006E88F6 /* ModelsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A41CDA32A5E55B9006E88F6 /* ModelsModule.swift */; };
 		8A5FAE6C2A57AB6500E33A8A /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5FAE6B2A57AB6500E33A8A /* Module.swift */; };
 		8A5FAE6F2A57ADA300E33A8A /* ModuleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5FAE6E2A57ADA300E33A8A /* ModuleCard.swift */; };
 		8A5FAE712A57B0B800E33A8A /* ModuleDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5FAE702A57B0B800E33A8A /* ModuleDetail.swift */; };
@@ -31,7 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8A41CDA32A5E55B9006E88F6 /* CathedralModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CathedralModule.swift; sourceTree = "<group>"; };
+		8A41CDA32A5E55B9006E88F6 /* ModelsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsModule.swift; sourceTree = "<group>"; };
 		8A5FAE6B2A57AB6500E33A8A /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		8A5FAE6E2A57ADA300E33A8A /* ModuleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleCard.swift; sourceTree = "<group>"; };
 		8A5FAE702A57B0B800E33A8A /* ModuleDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleDetail.swift; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		8A41CDA22A5E55A3006E88F6 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				8A41CDA32A5E55B9006E88F6 /* CathedralModule.swift */,
+				8A41CDA32A5E55B9006E88F6 /* ModelsModule.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A41CDA42A5E55B9006E88F6 /* CathedralModule.swift in Sources */,
+				8A41CDA42A5E55B9006E88F6 /* ModelsModule.swift in Sources */,
 				8AAD2AA52A57A30900FBEA86 /* ContentView.swift in Sources */,
 				8AAD2AA32A57A30900FBEA86 /* metalabs_vision_proApp.swift in Sources */,
 				8A5FAE6C2A57AB6500E33A8A /* Module.swift in Sources */,
