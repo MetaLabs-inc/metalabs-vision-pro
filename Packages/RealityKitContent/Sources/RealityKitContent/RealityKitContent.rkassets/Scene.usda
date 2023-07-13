@@ -95,5 +95,15 @@ def Xform "Root"
         float3 xformOp:translate = (54.231884, 0, 21.396614)
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
     }
+
+    def "City" (
+        active = true
+        prepend references = @City.usdz@
+    )
+    {
+        float3 xformOp:scale = (0.01, 0.01, 0.01)
+        float3 xformOp:translate = (56.0111, 0, 19.595528)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
 }
 

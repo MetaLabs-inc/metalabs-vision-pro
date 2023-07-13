@@ -109,7 +109,8 @@ private struct WindowToggle: View {
 
     @Environment(\.openWindow) private var openWindow
     @Environment(\.dismissWindow) private var dismissWindow
-
+    @Environment(\.openImmersiveSpace) private var openImmersiveSpace
+    
     var body: some View {
         Toggle(title, isOn: $isShowing)
             .onChange(of: isShowing) { wasShowing, isShowing in
@@ -132,15 +133,19 @@ private struct SpaceToggle: View {
 
     @Environment(\.openImmersiveSpace) private var openImmersiveSpace
     @Environment(\.dismissImmersiveSpace) private var dismissImmersiveSpace
-
+    @Environment(\.openWindow) private var openWindow
+    @Environment(\.dismissWindow) private var dismissWindow
+    
     var body: some View {
         Toggle(title, isOn: $isShowing)
             .onChange(of: isShowing) { wasShowing, isShowing in
                 Task {
                     if isShowing {
+                        dismissWindow(id: "content")
                         await openImmersiveSpace(id: id)
                     } else {
                         await dismissImmersiveSpace()
+                        openWindow(id: "content")
                     }
                 }
             }

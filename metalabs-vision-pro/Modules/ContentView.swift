@@ -11,7 +11,7 @@ import RealityKitContent
 
 struct ContentView: View {
     @Environment(ViewModel.self) private var model
-
+    
     var body: some View {
         @Bindable var model = model
 
@@ -23,7 +23,7 @@ struct ContentView: View {
             }
             .navigationDestination(for: Module.self) { module in
                 ModuleDetail(module: module)
-                    .navigationTitle(module.eyebrow)
+                    .navigationTitle(module.eyebrow)      
             }
         }
     }

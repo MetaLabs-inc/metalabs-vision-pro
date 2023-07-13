@@ -12,6 +12,8 @@
 		8A5FAE6F2A57ADA300E33A8A /* ModuleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5FAE6E2A57ADA300E33A8A /* ModuleCard.swift */; };
 		8A5FAE712A57B0B800E33A8A /* ModuleDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5FAE702A57B0B800E33A8A /* ModuleDetail.swift */; };
 		8A5FAE732A57B10500E33A8A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5FAE722A57B10500E33A8A /* ViewModel.swift */; };
+		8A8AE11A2A5F7FAC002ACA09 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8AE1192A5F7FAC002ACA09 /* City.swift */; };
+		8A8AE11C2A5F7FF0002ACA09 /* CityModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8AE11B2A5F7FF0002ACA09 /* CityModule.swift */; };
 		8AAD2AA12A57A30900FBEA86 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 8AAD2AA02A57A30900FBEA86 /* RealityKitContent */; };
 		8AAD2AA32A57A30900FBEA86 /* metalabs_vision_proApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAD2AA22A57A30900FBEA86 /* metalabs_vision_proApp.swift */; };
 		8AAD2AA52A57A30900FBEA86 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAD2AA42A57A30900FBEA86 /* ContentView.swift */; };
@@ -36,6 +38,8 @@
 		8A5FAE6E2A57ADA300E33A8A /* ModuleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleCard.swift; sourceTree = "<group>"; };
 		8A5FAE702A57B0B800E33A8A /* ModuleDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleDetail.swift; sourceTree = "<group>"; };
 		8A5FAE722A57B10500E33A8A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		8A8AE1192A5F7FAC002ACA09 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		8A8AE11B2A5F7FF0002ACA09 /* CityModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModule.swift; sourceTree = "<group>"; };
 		8AAD2A9B2A57A30900FBEA86 /* metalabs-vision-pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "metalabs-vision-pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AAD2A9F2A57A30900FBEA86 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		8AAD2AA22A57A30900FBEA86 /* metalabs_vision_proApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metalabs_vision_proApp.swift; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				8A41CDA32A5E55B9006E88F6 /* ModelsModule.swift */,
+				8A8AE11B2A5F7FF0002ACA09 /* CityModule.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -88,6 +93,7 @@
 				8AAD2AA42A57A30900FBEA86 /* ContentView.swift */,
 				8A5FAE6E2A57ADA300E33A8A /* ModuleCard.swift */,
 				8A5FAE702A57B0B800E33A8A /* ModuleDetail.swift */,
+				8A8AE1192A5F7FAC002ACA09 /* City.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -260,11 +266,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A41CDA42A5E55B9006E88F6 /* ModelsModule.swift in Sources */,
+				8A8AE11C2A5F7FF0002ACA09 /* CityModule.swift in Sources */,
 				8AAD2AA52A57A30900FBEA86 /* ContentView.swift in Sources */,
 				8AAD2AA32A57A30900FBEA86 /* metalabs_vision_proApp.swift in Sources */,
 				8A5FAE6C2A57AB6500E33A8A /* Module.swift in Sources */,
 				8A5FAE712A57B0B800E33A8A /* ModuleDetail.swift in Sources */,
 				8A5FAE732A57B10500E33A8A /* ViewModel.swift in Sources */,
+				8A8AE11A2A5F7FAC002ACA09 /* City.swift in Sources */,
 				8A5FAE6F2A57ADA300E33A8A /* ModuleCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

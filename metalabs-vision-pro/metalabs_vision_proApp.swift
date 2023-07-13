@@ -12,7 +12,7 @@ import RealityKitContent
 struct metalabs_vision_proApp: App {
     // The view model.
     @State private var model = ViewModel()
-    @State private var aboutUsImmersionStyle: ImmersionStyle = .mixed
+    @State private var workInmersionStyle: ImmersionStyle = .full
 
     var body: some Scene {
         WindowGroup ("Content Screen", id: "content") {
@@ -27,11 +27,10 @@ struct metalabs_vision_proApp: App {
         .defaultSize(width: 0.6, height: 0.6, depth: 0.6, in: .meters)
         
         // A volume that displays a the work detail.
-        WindowGroup(id: Module.work.name) {
-            ModuleDetail(module: Module.work).environment(model)
+        ImmersiveSpace(id: Module.work.name) {
+            City().environment(model)
         }
-        .windowStyle(.plain)
-        .defaultSize(width: 0.6, height: 0.6, depth: 0.6, in: .meters)
+        .immersionStyle(selection: $workInmersionStyle, in: .full)
 
         // A volume that displays a the careers detail.
         WindowGroup(id: Module.careers.name) {
